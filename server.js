@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Static directory
-app.use(express.static(path.join(__dirname, 'client', 'googlebooks', 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(routes);
 // Routes
 // =============================================================
